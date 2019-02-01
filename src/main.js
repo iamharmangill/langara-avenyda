@@ -7,11 +7,11 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false
 
-/* eslint-disable*/
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
