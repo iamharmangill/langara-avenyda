@@ -20,6 +20,7 @@
     "car"
   ],
   "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
     "vue": "^2.5.11"
   },
   "browserslist": [
