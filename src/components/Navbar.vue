@@ -9,7 +9,8 @@
 
     <b-navbar-nav>
       <b-nav-item href="#">About Us</b-nav-item>
-      <b-nav-item href="#">Information</b-nav-item>
+      <b-nav-item href="#" @click="goHome">Home</b-nav-item>
+      <b-nav-item href="#" @click="goFaqs">Faqs</b-nav-item>
       <b-nav-item href="#">Contact Us</b-nav-item>
       
     </b-navbar-nav>
@@ -48,6 +49,14 @@ export default {
     data(){
         return{
             companyName:'Avenyda'
+        }
+    },
+    methods:{
+        goHome(){
+            this.$router.push({ name: 'Home'})
+        },
+        goFaqs(){
+            this.$router.push({ name: 'Faqs'})
         }
     }
 }
