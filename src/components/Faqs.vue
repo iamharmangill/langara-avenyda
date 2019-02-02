@@ -1,5 +1,6 @@
 <template>
 <b-container class="bv-example-row">
+    <h1>FAQS</h1>
     <b-row>
         <b-col>
     <ul>
