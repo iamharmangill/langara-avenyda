@@ -1,5 +1,5 @@
 <template>
-<b-container class="bv-example-row">
+<b-container class="bv-example-row" fluid>
     <b-container class="bg-container p-4" fluid>
       <b-row>
         <b-col  class="text-left">
@@ -61,5 +61,8 @@ export default {
 .questions{
     margin-bottom: 100px;
 }
+.bg-container {
+    background-color: #ddd;
+  }
 
 </style>
