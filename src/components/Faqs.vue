@@ -64,5 +64,9 @@ export default {
 .bg-container {
     background-color: #ddd;
   }
+  
+  .SignAlign{
+      margin-top: 1rem;
+  }
 
 </style>
