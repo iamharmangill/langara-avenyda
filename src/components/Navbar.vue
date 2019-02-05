@@ -33,7 +33,7 @@
         </div>
 
         <div class="SignAlign">
-        <b-button>Sign in</b-button>
+        <b-button @click="goProfile">Sign in</b-button>
         <b-form-checkbox id="checkbox1"
                      v-model="status"
                      value="accepted"
@@ -69,6 +69,9 @@ export default {
         },
         goFaqs(){
             this.$router.push({ name: 'Faqs'})
+        },
+        goProfile(){
+            this.$router.push({ name: 'Profile'})
         }
     }
 }
