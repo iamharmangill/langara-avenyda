@@ -1,5 +1,5 @@
 <template>
-   <b-navbar toggleable="md" type="light" variant="info">
+   <b-navbar toggleable="md" type="light" variant="info" class="bg-dark ">
 
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
@@ -79,6 +79,15 @@ export default {
     margin-top:0;
     padding-top: 0;
 }
+.navbar,.nav-link{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+.nav-pills {
+    color: black;
+}
 .ml-auto{
 display:grid;
 grid-template-columns: 1fr 1fr 1fr;
@@ -92,7 +101,11 @@ grid-column-gap: 7px;
 .SignAlign{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin-top: 1rem;
 }
+.bv-example-row{
+      text-align: center;
+  }
 @media (min-width: 768px){
 .logo-nav{
     width: 100%;
@@ -108,6 +121,9 @@ grid-column-gap: 7px;
 }
 .logo-nav-a{
     list-style: none;
+}
+.logo-nav-a{
+    width: 82vw;
 }
 }
 </style>
