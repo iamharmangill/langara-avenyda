@@ -10,6 +10,14 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import * as VueGoogleMaps from "vue2-google-maps";
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyBxpCZUqYFD7u-OrostbRKNK-2YCpaYJ_c",
+    libraries: "places" //necessary for places input
+  }
+});
 
 Vue.use(BootstrapVue);
 

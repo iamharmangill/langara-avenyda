@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Faqs from '@/components/Faqs'
 import Profile from '@/components/Profile'
+import GoogleMap from '@/components/GoogleMap'
 
 
 Vue.use(Router)
@@ -23,6 +24,11 @@ export default new Router({
       path: '/profile',
       name: 'Profile',
       component: Profile
+    },
+    {
+      path: '/googlemap',
+      name: 'GoogleMap',
+      component: GoogleMap
     }
   ]
 })
