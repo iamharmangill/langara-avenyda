@@ -24,6 +24,7 @@
         <b-col>
           <b-img right src="../assets/maps-placeholder.png" fluid alt="maps placeholder" class="pl-5"/>
         </b-col>
+        
       </b-row>
     </b-container>
     <b-container class="p-5 bg-container" fluid>
@@ -79,6 +80,7 @@
 <script>
   import CreateAccount from '@/components/CreateAccount'
   import Carousel from '@/components/Carousel'
+  import GoogleMap from "@/components/GoogleMap"
 
   export default {
     name: 'Home',
@@ -89,7 +91,8 @@
     },
     components: {
       CreateAccount,
-      Carousel
+      Carousel,
+      GoogleMap
     }
   }
 </script>
