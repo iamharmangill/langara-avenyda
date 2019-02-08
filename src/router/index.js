@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import Faqs from '@/components/Faqs'
 import Profile from '@/components/Profile'
 import GoogleMap from '@/components/GoogleMap'
+import Contact from '@/components/Contact'
 
 
 Vue.use(Router)
@@ -30,10 +31,12 @@ export default new Router({
       path: '/googlemap',
       name: 'GoogleMap',
       component: GoogleMap
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
     }
   ]
 })
 
-
-
-Faqs
