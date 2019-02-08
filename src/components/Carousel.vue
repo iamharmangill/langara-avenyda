@@ -13,36 +13,36 @@
                 @sliding-end="onSlideEnd"
     >
       <b-carousel-slide img-blank img-alt="Blank image">
-        <b-img rounded="circle" blank width="250" height="250" blank-color="#ddd" alt="img" class="m-1 mb-5" />
+        <b-img rounded="circle" blank width="150" height="150" blank-color="#ddd" alt="img" class="m-1 mb-3" />
         <h4>John Doe</h4>
-        <p class="mb-5">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           eros felis, tincidunt a tincidunt eget, convallis vel est. Ut pellentesque
           ut lacus vel interdum.
         </p>
       </b-carousel-slide>
       <b-carousel-slide img-blank img-alt="Blank image">
-        <b-img rounded="circle" blank width="250" height="250" blank-color="#ddd" alt="img" class="m-1 mb-5" />
+        <b-img rounded="circle" blank width="150" height="150" blank-color="#ddd" alt="img" class="m-1 mb-3" />
         <h4>Christine Stevenson</h4>
-        <p class="mb-5">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           eros felis, tincidunt a tincidunt eget, convallis vel est. Ut pellentesque
           ut lacus vel interdum.
         </p>
       </b-carousel-slide>
       <b-carousel-slide img-blank img-alt="Blank image">
-        <b-img rounded="circle" blank width="250" height="250" blank-color="#ddd" alt="img" class="m-1 mb-5" />
+        <b-img rounded="circle" blank width="150" height="150" blank-color="#ddd" alt="img" class="m-1 mb-3" />
         <h4>Phil Davies</h4>
-        <p class="mb-5">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           eros felis, tincidunt a tincidunt eget, convallis vel est. Ut pellentesque
           ut lacus vel interdum.
         </p>
       </b-carousel-slide>
       <b-carousel-slide img-blank img-alt="Blank image">
-        <b-img rounded="circle" blank width="250" height="250" blank-color="#ddd" alt="img" class="m-1 mb-5" />
+        <b-img rounded="circle" blank width="150" height="150" blank-color="#ddd" alt="img" class="m-1 mb-3" />
         <h4>Steve Lock</h4>
-        <p class="mb-5">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           eros felis, tincidunt a tincidunt eget, convallis vel est. Ut pellentesque
           ut lacus vel interdum.
