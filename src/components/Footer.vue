@@ -5,7 +5,7 @@
       <b-row>
         <b-col class="text-left pr-5 mr-5">
           <div class="mb-3">
-            <b-img class="logo" src="../assets/logo.png" alt="Avenyda logo" />
+            <b-img class="logo" src="../assets/Logo/logo-white.svg" alt="Avenyda logo" />
           </div>
           <small>Address: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
           <div class="social-icons py-4">

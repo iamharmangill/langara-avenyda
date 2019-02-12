@@ -1,24 +1,25 @@
 <template>
-   <b-navbar toggleable="md" type="light" variant="info" class="bg-dark ">
+   <b-navbar toggleable="lg" type="light" variant="info">
 
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
     <b-nav-item @click="goHome" class="logo-nav-a">
-    <img src="../assets/logo.png" alt=""  class="logo-nav">
+    <img src="../assets/Logo/logo-white.svg" alt=""  class="logo-nav">
     </b-nav-item>
 
   <b-collapse is-nav id="nav_collapse">
 
     <b-navbar-nav>
       <b-nav-item href="#">HOW IT WORKS</b-nav-item>
+      <b-nav-item href="#">FIND PARKING</b-nav-item>
+      <b-nav-item href="#">LIST YOUR PARKING</b-nav-item>
       <b-nav-item href="#" @click="goFaqs">FAQ</b-nav-item>
-      <b-nav-item href="#">CONTACT</b-nav-item>
       
     </b-navbar-nav>
 
     <!-- Right aligned nav items -->
     <b-navbar-nav class="ml-auto">
-        <div>
+        <!-- <div>
         <p>Email</p>
         <b-form-input v-model="text1"
                   type="text"
@@ -30,16 +31,20 @@
         <b-form-input v-model="text2"
                   type="text"
                   placeholder="●●●●●●●●●"></b-form-input>
-        </div>
+        </div> -->
 
         <div class="SignAlign">
-        <b-button @click="goProfile">Sign in</b-button>
-        <b-form-checkbox id="checkbox1"
+        <b-button @click="goProfile" class="signIN">Sign in</b-button>
+        
+        <!-- <b-form-checkbox id="checkbox1"
                      v-model="status"
                      value="accepted"
                      unchecked-value="not_accepted">
       Remember me
-    </b-form-checkbox>
+    </b-form-checkbox> -->
+        </div>
+        <div>
+            <b-button @click="goProfile" class="signUP">Sign up</b-button>
         </div>
          
       
@@ -82,8 +87,23 @@ export default {
     margin-top:0;
     padding-top: 0;
 }
+.signUP{
+    background: transparent !important;
+}
+.signIN{
+    background: transparent !important;
+    border: none;
+}
+.signIN,.signUP{
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .navbar,.nav-link{
-    color: white;
+    color: white !important;
+    background: #1D3150 !important;
+}
+.bg-info{
+    background: #1D3150 !important;
 }
 .navbar-light .navbar-nav .nav-link{
     color: white;
@@ -93,40 +113,40 @@ export default {
 }
 .ml-auto{
 display:grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 grid-template-rows: auto auto;
-grid-column-gap: 7px;
+grid-column-gap: 0;
+width: 60vw;
+margin: 0 auto;
+padding-bottom: 10px;
 }
 .ml-auto p{
     margin: 0;
     text-align: start;
 }
-.SignAlign{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-top: 1rem;
-}
 .bv-example-row{
       text-align: center;
   }
 @media (min-width: 768px){
-.logo-nav{
-    width: 100%;
-}
 .logo-nav-a{
     width: 25%;
     list-style: none;
 }
 }
 @media (max-width: 768px){
-.logo-nav{
-    width: 25%;
+nav{
+    padding: 0 !important;
 }
 .logo-nav-a{
     list-style: none;
+    width: 40vw;
+    margin: 0;
 }
-.logo-nav-a{
-    width: 82vw;
+.nav-link{
+    padding: 0;
+}
+.navbar-expand-lg{
+    text-align: center;
 }
 }
 </style>
