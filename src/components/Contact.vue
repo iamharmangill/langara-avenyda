@@ -35,8 +35,8 @@
 
       <b-form-group id="exampleInputGroup3"
                     label="PHONE"
-                    label-for="exampleInput2">
-        <b-form-input id="exampleInput2"
+                    label-for="exampleInput3">
+        <b-form-input id="exampleInput3"
                       type="text"
                       v-model="form.phone"
                       required
@@ -47,8 +47,8 @@
 
       <b-form-group id="exampleInputGroup4"
                     label="MESSAGE"
-                    label-for="exampleInput2">
-        <b-form-input id="exampleInput2"
+                    label-for="exampleInput4">
+        <b-form-input id="exampleInput4"
                       type="text"
                       v-model="form.message"
                       required
@@ -60,7 +60,7 @@
 
 
 
-      <b-button type="submit" variant="primary">Submit</b-button>
+      <b-button type="submit" variant="primary" id="submitButton">Submit</b-button>
       <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
     </b-form>
   </div>
@@ -108,20 +108,24 @@ export default {
 h1{
     text-align: start;
     color: white;
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 .col-form-label{
     color: white !important;
 }
-
+#exampleInput4{
+    height: 20vh;
+}
 .contactPage{
     background-image: url("../assets/alexandra-kirr-322679-unsplash.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
+    padding: 2rem;
 }
 form{
-    padding-bottom: 10vh;
+    padding: 20px;
 }
+
 input{
     background: transparent !important;
 }
@@ -129,9 +133,14 @@ input{
 form{
     width: 70vw;
     margin: 0 auto;
+    background: white;
+    border-radius: 1rem;
+}
+h1{
+    text-align: center;
 }
 .contactPage{
-    /* background-size: 120vh; */
+    background-size: 150vh;
 }
 }
 
@@ -141,11 +150,11 @@ form{
     margin-left: 10vw;
 }
 h1{
-    margin-left:10vw;
+    margin-left:11vw;
 }
 .contactPage{
-    background-size: 100vw;
-    /* height: max-height; */
+    background-size: 120vw;
+
 }
 }
 </style>
