@@ -5,6 +5,9 @@ import Faqs from '@/components/Faqs'
 import Profile from '@/components/Profile'
 import GoogleMap from '@/components/GoogleMap'
 import Contact from '@/components/Contact'
+import SignIn from '@/components/SignIn'
+import SignUp from '@/components/SignUp'
+import Verification from '@/components/Verification'
 
 
 Vue.use(Router)
@@ -36,7 +39,21 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/signin',
+      name: 'SignIn',
+      component: SignIn
+    },
+    {
+      path: '/signup',
+      name: 'SignUp',
+      component: SignUp
+    },
+    {
+      path: '/verification',
+      name: 'Verification',
+      component: Verification
     }
   ]
 })
-
