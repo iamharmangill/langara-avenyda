@@ -83,10 +83,17 @@ export default {
 </script>
 
 <style>
+@import url("https://use.typekit.net/pwq4ktd.css");
 #app{
     margin-top:0;
     padding-top: 0;
 }
+.navbar-toggler{
+    color: white !important;
+    border-color: white !important;
+    background-color: white;
+    margin-left: 10px;}
+
 .signUP{
     background: transparent !important;
 }
@@ -111,15 +118,7 @@ export default {
 .nav-pills {
     color: black;
 }
-.ml-auto{
-display:grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto auto;
-grid-column-gap: 0;
-width: 60vw;
-margin: 0 auto;
-padding-bottom: 10px;
-}
+
 .ml-auto p{
     margin: 0;
     text-align: start;
@@ -147,6 +146,15 @@ nav{
 }
 .navbar-expand-lg{
     text-align: center;
+}
+.ml-auto{
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto;
+grid-column-gap: 0;
+width: 60vw;
+margin: 0 auto;
+padding-bottom: 10px;
 }
 }
 </style>
