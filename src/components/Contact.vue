@@ -150,7 +150,7 @@ form{
     margin-left: 10vw;
 }
 h1{
-    margin-left:10vw;
+    margin-left:11vw;
 }
 .contactPage{
     background-size: 120vw;
