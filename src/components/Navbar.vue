@@ -14,7 +14,7 @@
       <b-nav-item href="#">FIND PARKING</b-nav-item>
       <b-nav-item href="#">LIST YOUR PARKING</b-nav-item>
       <b-nav-item href="#" @click="goFaqs">FAQ</b-nav-item>
-      
+
     </b-navbar-nav>
 
     <!-- Right aligned nav items -->
@@ -34,8 +34,8 @@
         </div> -->
 
         <div class="SignAlign">
-        <b-button @click="goProfile" class="signIN">Sign in</b-button>
-        
+        <b-button @click="goSignIn" class="signIN">Sign in</b-button>
+
         <!-- <b-form-checkbox id="checkbox1"
                      v-model="status"
                      value="accepted"
@@ -44,10 +44,10 @@
     </b-form-checkbox> -->
         </div>
         <div>
-            <b-button @click="goProfile" class="signUP">Sign up</b-button>
+            <b-button @click="goSignUp" class="signUP">Sign up</b-button>
         </div>
-         
-      
+
+
 
     </b-navbar-nav>
 
@@ -77,6 +77,12 @@ export default {
         },
         goProfile(){
             this.$router.push({ name: 'Profile'})
+        },
+        goSignIn(){
+            this.$router.push({ name: 'SignIn'})
+        },
+        goSignUp(){
+            this.$router.push({ name: 'SignUp'})
         }
     }
 }
@@ -158,5 +164,3 @@ padding-bottom: 10px;
 }
 }
 </style>
-
-
