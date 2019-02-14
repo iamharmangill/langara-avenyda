@@ -3,8 +3,12 @@
     <b-row class="px-5" align-h="center">
       <div class="p-5 my-5 verification-wrapper">
         <img src="../assets/Logo/logo.svg" alt=""  class="logo-nav">
-        <h2 class="mb-4">You're almost there!</h2>
-        <b-img left src="../assets/Icons/Email.svg" alt="email" />
+        <h2 class="my-4">You're almost there!</h2>
+        <div class="my-5">
+          <img src="../assets/Icons/verification email.svg" alt=""  class="logo-nav">
+        </div>
+        <p class="mb-5">Before we get started, please confirm your email address.</p>
+        <a href="#">Resend confirmation email</a>
       </div>
     </b-row>
   </b-container>
