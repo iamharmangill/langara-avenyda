@@ -1,19 +1,26 @@
 <template>
   <div id="home">
-    <b-container class="bg-container p-5" fluid>
+    <b-container class="h-100 p-5 bg-container" id="one" fluid>
       <b-row>
-        <b-col cols="4" class="text-left head-links">
-          <div class="mb-5">
-            <h2 class="pb-5 my-5">Lorem Ipsum Dolor Sit Amet Consectetur</h2>
-            <b-button href="#" variant="primary" class="mr-2">Find a Parking Spot</b-button>
-            <b-button href="#" variant="primary">List Your Parking Spot</b-button>
+        
+        <b-col class="h-100">
+          <div>
+            <h2 class="pb-5 my-5">Parking’s new best friend</h2>
+          </div>
+          <div>
+            <p>Find convenient and affordable parking listed by locals</p>
+          </div>
+          <div>
+            <b-button href="#" variant="primary" class="mr-4">FIND PARKING</b-button>
+          </div>
+          <div>
+            <b-button href="#" variant="outline-success"> LIST YOUR PARKING</b-button>
           </div>
         </b-col>
-        <b-col></b-col>
-        <b-col cols='4'>
-          <CreateAccount />
-        </b-col>
+        <b-col class="h-100"></b-col>
+        <b-col class="h-100"></b-col>
       </b-row>
+      
     </b-container>
     <b-container class="p-5" fluid>
       <b-row>
@@ -99,9 +106,7 @@
 </script>
 
 <style scoped>
-  #home {
-    min-height: 1000px;
-  }
+
 
   h2 {
     font-size: 3rem;
@@ -112,11 +117,15 @@
   }
 
   .bg-container {
-    background-color: #ddd;
+    background-color: darkgrey;
   }
 
-  .head-links {
-    position: relative;
+  #one {
+    background-image: url("../assets/bkpic.jpg");
+    background-size: cover;
+  }
+  .mb-5{
+    height: 60vh;
   }
 
   .head-links div {
