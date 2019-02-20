@@ -10,6 +10,7 @@
 </template>
 
 <script>
+  const axios = require('axios');
   export default {
     name: 'GetUser',
     data () {
@@ -19,30 +20,17 @@
     },
     methods:{
       loadUsers: function() {
-        // this.$http.get('https://wmdd-get-w5-r6ob455nc.now.sh',
-        //  {
-        //      headers: {
-        //        'Access-Control-Allow-Origin': '*',
-        //        'Access-Control-Allow-Methods': 'POST, GET, PUT, OPTIONS, DELETE',
-        //        'Access-Control-Allow-Headers': 'Access-Control-Allow-Methods, Access-Control-Allow-Origin, Origin, Accept, Content-Type',
-        //        'Content-Type': 'application/json',
-        //        'Accept': 'application/json'
-        //      }
-        //    }
-        //    ).then(function (response) {
-        //
-        //      console.log(response);
-        //    }, function (response) {
-        //      console.error(response);
-        //    });
-      this.$http.get('https://wmdd-get-w5-mn4s77bzu.now.sh', function(data, status, request){
-        if(status == 200)
-        {
-          console.log(data);
-          this.users = data;
-        }
-      });
-    }
+        axios
+        .get('https://wmdd-get-w5-c90kypf2d.now.sh/api/get')
+        .then(response => {
+          this.users = response
+        })
+        .catch(error => {
+          console.log(error)
+          // this.errored = true
+        })
+        // .finally(() => this.loading = false)
+      }
     }
   }
 </script>
@@ -51,10 +39,6 @@
   #get-user {
     background: linear-gradient(#1D3150, #3C6387, #3F5D7E);
   }
-
-  /* .bform, a, #create-account-button {
-    color: #454F63;
-  } */
 
   .output-wrapper {
     width: 500px;
@@ -67,21 +51,4 @@
   .output-wrapper h2 {
     border-bottom: 1px solid #EBEBEB;
   }
-
-  /* #signin-submit-button {
-    width: 100%;
-    background-color: #3ACCE1;
-    border: none;
-  } */
-
-  /* #create-account-button {
-    width: 100%;
-    background-color: #fff;
-    border-color: #3ACCE1;
-  } */
-
-  /* p {
-    text-align: center;
-    border-bottom: 1px solid #EBEBEB;
-  } */
 </style>
